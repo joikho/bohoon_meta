@@ -18,7 +18,7 @@ public class TiberoItemService {
         if(!tiberoItems.isEmpty()) return tiberoItemRepository.findAll();
         else throw new IllegalArgumentException("no such data");
     }
-
+     //123
     public TiberoItem getTiberoItemById(final Long id) {
         return tiberoItemRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("no such data"));
     }
